@@ -32,11 +32,13 @@ client.on('qr', (qr) => {
 client.on('ready', () => {
     console.log('ready client')
 
-    let originNumber = '+6282272809075'
+    let originNumber = '+6282287917561'
 
     let chatId = originNumber.substring(1) + "@c.us"
 
-    client.sendMessage(chatId, 'tess')
+    let message = "Bismillahirrahmanirrahim Assalamu'alaikum warahmatullahi wabarakatuh  Allhamdulilahirabbal alamin dengan rahmat dan ridha Allah SWT, perkenankan kami memberitahukan seraya memohon doa restu rekan-rekan pada acara pernikahan kami:  *Reza Anugrah*                    & *Dinda Simpati Star*    *Akad Nikah*:  🗓 Sabtu, ... Agustus 2021 ⏰ Pukul 06.30 WIB 🏡 Kediaman Mempelai Wanita   Undangan pernikahan dapat dilihat pada tautan: ♾ https://undangpedia.com/premium01/Aqmal+dan+Istri   Merupakan suatu kebahagiaan bagi kami apabila rekan-rekan berkenan mengirimkan ucapan dan doa terbaik di momen spesial kami. 🤲🏻      _Wassalamu'alaikum warahmatullahi wabarakatuh_  Kami yang berbahagia, _*Ecak& Dinda*_"
+
+    client.sendMessage(chatId, message)
 })
 
 client.initialize()
