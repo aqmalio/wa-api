@@ -32,7 +32,7 @@ client.on('qr', (qr) => {
 client.on('ready', () => {
     console.log('ready client')
 
-    let originNumber = '+6282287917561'
+    let originNumber = '+000000000'
 
     let chatId = originNumber.substring(1) + "@c.us"
 
