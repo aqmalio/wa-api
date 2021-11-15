@@ -32,16 +32,22 @@ client.on('qr', (qr) => {
 client.on('ready', () => {
     console.log('ready client')
 
-    let originNumber = '+000000000'
+    let numbers = ['+6289610250742', '+6281253162587']
 
-    let chatId = originNumber.substring(1) + "@c.us"
+    for (let index = 0; index < numbers.length; index++) {
+        let originNumber = numbers[index]
 
-    let message = "Bismillahirrahmanirrahim Assalamu'alaikum warahmatullahi wabarakatuh  Allhamdulilahirabbal alamin dengan rahmat dan ridha Allah SWT, perkenankan kami memberitahukan seraya memohon doa restu rekan-rekan pada acara pernikahan kami:  *Reza Anugrah*                    & *Dinda Simpati Star*    *Akad Nikah*:  🗓 Sabtu, ... Agustus 2021 ⏰ Pukul 06.30 WIB 🏡 Kediaman Mempelai Wanita   Undangan pernikahan dapat dilihat pada tautan: ♾ https://undangpedia.com/premium01/Aqmal+dan+Istri   Merupakan suatu kebahagiaan bagi kami apabila rekan-rekan berkenan mengirimkan ucapan dan doa terbaik di momen spesial kami. 🤲🏻      _Wassalamu'alaikum warahmatullahi wabarakatuh_  Kami yang berbahagia, _*Ecak& Dinda*_"
+        let chatId = originNumber.substring(1) + "@c.us"
 
-    client.sendMessage(chatId, message)
+        let message = "Ini cuma test WA Blasting aja dari aqmal"
+
+        client.sendMessage(chatId, message)
+    }
 })
 
-client.initialize()
+client.initialize().catch(err => {
+    console.log(err)
+})
 
 
 // When message comming
